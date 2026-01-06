@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/screens/button%20widget/buttos.dart';
+// import 'package:flutter_practice/screens/button%20widget/buttos.dart';
+import 'package:flutter_practice/screens/text%20widget/text.dart';
 //import 'package:flutter_practice/screens/Home_Screen/home.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ButtonScreen(),
+      themeMode: ThemeMode.system,
+      home: TextScreen(),
     );
   }
 }
