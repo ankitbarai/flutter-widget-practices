@@ -14,27 +14,30 @@ class _ButtonScreenState extends State<ButtonScreen> {
       appBar: AppBar(
         title: Text("Button Practice"),
       ),
-      body: Column(
-        children:[ ElevatedButton(
-          style: ButtonStyle(
-            shadowColor: WidgetStateColor.transparent,
-          ),
-          onPressed: (){
-
-          },
-          child: Text('Elevated Button')
-          ),
-          TextButton(
-            onPressed: (){}, 
-            child: Text('Click me')
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children:[ ElevatedButton(
+            style: ButtonStyle(
+              shadowColor: WidgetStateColor.transparent,
             ),
-          OutlinedButton(
-            onPressed: (){},
-             child: Text('Outlined Button'),
-             style: ButtonStyle(foregroundColor: WidgetStatePropertyAll(Colors.amberAccent),
-             backgroundColor: WidgetStatePropertyAll(Colors.black26)),
-             ),
-        ],
+            onPressed: (){
+        
+            },
+            child: Text('Elevated Button')
+            ),
+            TextButton(
+              onPressed: (){}, 
+              child: Text('Click me')
+              ),
+            OutlinedButton(
+              onPressed: (){},
+               child: Text('Outlined Button'),
+               style: ButtonStyle(foregroundColor: WidgetStatePropertyAll(Colors.amberAccent),
+               backgroundColor: WidgetStatePropertyAll(Colors.black26)),
+               ),
+          ],
+        ),
       ),
     ); 
   }
