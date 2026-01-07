@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/screens/cards/cards.dart';
 // import 'package:flutter_practice/screens/button%20widget/buttos.dart';
-import 'package:flutter_practice/screens/text%20widget/text.dart';
+// import 'package:flutter_practice/screens/text%20widget/text.dart';
 //import 'package:flutter_practice/screens/Home_Screen/home.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MuApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: TextScreen(),
+      home: CardScreen(),
     );
   }
 }

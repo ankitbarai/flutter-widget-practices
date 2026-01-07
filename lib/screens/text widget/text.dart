@@ -33,6 +33,12 @@ class TextScreen extends StatelessWidget {
            ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          print("Floating Action button clicked");
+        },
+        child: Icon(Icons.add_ic_call_outlined),
+        ),
     );
   }
 }
