@@ -18,7 +18,13 @@ class MuApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: ImageScreen(),
+      home: TabBarView(
+        children: [
+          Center(child: Text("Home"),),
+          Center(child: Text("Setting"),),
+          Center(child: Text("Profile"),),
+        ]
+      ),
     );
   }
 }
